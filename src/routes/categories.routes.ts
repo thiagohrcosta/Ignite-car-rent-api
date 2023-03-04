@@ -5,6 +5,12 @@ import { CategoriesRepository } from "../repositories/CategoriesRepository";
 const categoriesRoutes = Router();
 const categoriesRepository = new CategoriesRepository();
 
+categoriesRoutes.get("/", (req, res) => {
+  const all = categoriesRepository.list();
+
+  return res.json(all);
+});
+
 categoriesRoutes.post("/", (req, res) => {
   const { name, description } = req.body;
 
