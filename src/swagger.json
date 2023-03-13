@@ -1,0 +1,12 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "RentalX Documentation",
+    "description": "RentalX is a car rental company that allows users to rent cars for a period of time.",
+    "version": "1.0.0",
+    "constact": {
+      "name": "RentalX",
+      "url": "contact@rentalx.com"
+    }
+  }
+}
